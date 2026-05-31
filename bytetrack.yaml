@@ -1,0 +1,18 @@
+# bytetrack.yaml  –  ByteTrack tracker configuration
+# Placed here so ultralytics can find it, or pass full path to --tracker
+
+tracker_type: bytetrack
+
+# Track buffer: how many frames an ID is kept alive while undetected
+track_buffer: 30           # ~1 s at 30 FPS; increase for slow-moving drone footage
+
+# Matching thresholds
+match_thresh: 0.8          # IoU threshold for high-confidence matches
+track_high_thresh: 0.5     # detections above this go into high-conf pool
+track_low_thresh: 0.10     # detections above this go into low-conf pool (rescue lost tracks)
+
+# New track threshold
+new_track_thresh: 0.6      # confidence to start a brand-new track
+
+# Minimum hits before a track is confirmed (reduces ghost tracks)
+min_hits: 2
