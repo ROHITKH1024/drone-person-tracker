@@ -1,0 +1,14 @@
+# Aerial Guardian – requirements
+# Install with:  pip install -r requirements.txt
+
+# Core
+ultralytics>=8.2.0        # YOLOv8 + ByteTrack built-in
+opencv-python>=4.9.0
+numpy>=1.24.0
+
+# SAHI – sliced inference for small objects
+sahi>=0.11.15
+
+# Misc
+PyYAML>=6.0
+tqdm>=4.66.0
